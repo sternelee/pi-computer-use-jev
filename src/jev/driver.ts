@@ -1,9 +1,9 @@
-import { readFileSync } from "node:fs";
 import type { CdpTab } from "../cdp.ts";
+import { jevSnapshotSource } from "./snapshot.ts";
 import { parseJevPage } from "./space.ts";
 import type { JevElement, JevRawAction, JevRawPage, JevSpace } from "./types.ts";
 
-const JEV_SNAPSHOT_SCRIPT = readFileSync(new URL("./snapshot.js", import.meta.url), "utf8");
+const JEV_SNAPSHOT_SCRIPT = jevSnapshotSource();
 const OBSERVE_TIMEOUT_MS = 15_000;
 
 /** A decision no longer refers to the observed page. */
