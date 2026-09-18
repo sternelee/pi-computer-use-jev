@@ -10,7 +10,7 @@ src/runtime.ts                   Immutable state store and resource scheduler
 src/state.ts                     Saved UI state ownership and restoration
 src/view.ts                      Stable refs and resulting-state change views
 src/outline.ts                   Outline parsing, folding, search, and ref mapping
-src/jev/snapshot.js              Atomic DOM snapshot evaluated in the controlled page
+src/jev/snapshot.ts               Atomic DOM snapshot (typed, serialized into the controlled page)
 src/jev/driver.ts                CDP observe, freshness, guarded execution, settle
 src/jev/space.ts                 Indexed action space, fingerprint, table rendering
 src/jev/questions.ts             Shared decision questions and evaluated state
